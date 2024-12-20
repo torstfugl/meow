@@ -1,0 +1,111 @@
+/* Body Styling */
+body {
+  background-color: #ff6f61; /* Softer red for a less intense background */
+  color: #ffffff; /* White text for better readability */
+  font-family: 'Arial', sans-serif; /* A more modern, neutral font */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
+}
+
+/* Header Styling */
+h1 {
+  margin-top: 50px;
+  font-size: 4em; /* Slightly larger font size for a bolder headline */
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Retain the playful vibe but also allow for fallback */
+  color: #fffae3; /* A soft cream color for better contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adds depth to the text */
+}
+
+/* Countdown Styling */
+#countdown {
+  font-size: 2.5em; /* Larger font for countdown */
+  color: #f0f0f0; /* Light color for countdown */
+  margin: 20px auto;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for the countdown text */
+}
+
+/* Gift Box Styling */
+#gift-box {
+  margin: 50px auto;
+  width: 200px; /* Slightly larger box */
+  height: 200px;
+  background-color: #ffd700; /* Golden color for the gift */
+  background-image: url('Images/gift-image.png');
+  background-size: cover;
+  background-position: center;
+  border: 8px solid #8b0000; /* Thicker border for more contrast */
+  border-radius: 12px; /* Slightly rounder corners for a smoother look */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out; /* Smooth animation on hover */
+  display: none; /* Hidden until 24th December */
+}
+
+/* Gift Box Hover Effect */
+#gift-box:hover {
+  transform: scale(1.05); /* Slight zoom effect when hovered */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth with a shadow */
+}
+
+/* Hidden Page Styling */
+#hidden-page {
+  display: none;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Darkened background to highlight hidden content */
+  color: #fff;
+  border-radius: 8px;
+  margin-top: 20px;
+  max-width: 90%; /* Ensures the hidden page doesn't stretch too wide on larger screens */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Video Grid Styling */
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #f8f8f8; /* Light background color to contrast with videos */
+  border-radius: 10px;
+}
+
+/* Video Styling */
+.meme-video {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px; /* Smooth rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.3s ease-in-out; /* Smooth animation on hover */
+}
+
+.meme-video {
+    pointer-events: none; /* Prevents interaction, including tap-to-fullscreen */
+}
+
+
+/* Video Hover Effect */
+.meme-video:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em; /* Adjust header size on smaller screens */
+  }
+
+  #gift-box {
+    width: 150px;
+    height: 150px; /* Adjust gift box size */
+  }
+
+  #countdown {
+    font-size: 2em; /* Adjust countdown size */
+  }
+}
