@@ -3,7 +3,7 @@ const giftBox = document.getElementById('gift-box');
 const hiddenPage = document.getElementById('hidden-page');
 const videoContainer = document.getElementById('video-container');
 
-const videoCount = 20; // Total number of videos
+const videoCount = 91; // Total number of videos
 const videoFolder = 'Videos/'; // Folder where videos are stored
 let currentPlayingVideo = null; // Track the currently playing video
 
@@ -80,7 +80,7 @@ window.addEventListener('scroll', () => {
 // Countdown Timer
 function updateCountdown() {
     const now = new Date();
-    const targetDate = new Date(now.getFullYear(), 11, 16); // 24th December
+    const targetDate = new Date(now.getFullYear(), 11, 24); // 24th December
     const diff = targetDate - now;
 
     if (diff <= 0) {
